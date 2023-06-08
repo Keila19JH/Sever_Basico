@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2"
+  },
+  "name": "serverbasico_act",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev":"nodemon app",
+      "start": "node app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
