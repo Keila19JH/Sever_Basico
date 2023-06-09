@@ -1,4 +1,5 @@
 const express = require('express');
+const dbConnection = require('../database/databaseConfig');
 
 class Server {
 
@@ -14,9 +15,14 @@ class Server {
         //mandar a llamar métodos
         this.middlewares();
         this.routes();
+        this.connectiondb();
     }
 
     //CREACIÓN DE MÉTOODOS
+
+    async connectiondb(){
+        await dbConnection()
+    }
 
     middlewares(){
         //parseo(forzar a cambiar los datos) y lectura del body
